@@ -3,6 +3,10 @@
         display: none;
     }
 
+    nav {
+        justify-content: center;
+    }
+
     .banner {
         min-height: 10vh;
     }
@@ -39,6 +43,13 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .work {
+        min-height: 15vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
     footer {
         min-height: 10vh;
         text-align: center;
@@ -62,10 +73,110 @@
         margin-bottom: 50px;
 
         grid-row-gap: 50px; /* add for adaptavisy */
+        grid-column-gap: 10px;
 
     }
 
-    html {
-        min-width: 10px;
+    .service-item-iw {
+        justify-content: flex-start;
+    }
+
+    .services {
+        padding-top: 50px;
+    }
+
+    .service-item {
+        margin-top: 0;
+    }
+
+    .mySlides h1 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .s-c-iw h1 {
+        font-size: 30px;
+        font-family: "Montserrat", serif;
+        color: #171717FF;
+        line-height: 1.5;
+    }
+
+    .numbers {
+        min-height: 10vh;
+    }
+
+    .numbers-content {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .n-c-iw {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .number-item {
+        margin: 25px 0;
+        float: left;
+        justify-content: flex-start;
+    }
+
+    .work-process {
+        min-height: 60vh;
+    }
+
+    .video {
+        height: 40%;
+        margin: 0;
+    }
+
+    .w-p-iw {
+        margin: 0;
+    }
+
+    .ellipse {
+        width: 60px;
+        height: 60px;
+    }
+
+    .arrow-1 {
+        border-top: 7px solid transparent;
+        border-left: 11px solid #ffffff;
+        border-bottom: 7px solid transparent;
+    }
+
+    .need-project {
+        background-color: #F5F5F5FF;
+        min-height: 30vh;
+    }
+
+    .n-p-contact-form {
+        margin-bottom: 30px;
+    }
+
+    .n-p-iw {
+        width: 90%;
+    }
+
+    .name\&email{
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .form-name, .form-email {
+        width: 100%;
+    }
+
+    .input-title, .input-comment {
+        margin-bottom: 30px;
+    }
+
+    .form-name {
+        margin-bottom: 30px;
+    }
+
+    .form-name input, .form-email input, .input-title input, .input-comment textarea {
+        width: 90%;
     }
 }

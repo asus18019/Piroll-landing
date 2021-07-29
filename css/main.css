@@ -102,7 +102,13 @@ nav {
 About
  */
 
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .about {
+    width: 90%;
     min-height: 35vh;
     display: flex;
     flex-direction: column;
@@ -177,6 +183,7 @@ Skills
 }
 
 .s-c-iw h1 {
+    text-align: center;
     font-size: 30px;
     font-family: "Montserrat", serif;
     color: #171717FF;
@@ -231,7 +238,7 @@ Numbers
     background-color: rgb(16, 201, 195);
     display: flex;
     justify-content: center;
-    height: 25vh;
+    min-height: 25vh;
 }
 
 .numbers-content {
@@ -290,6 +297,8 @@ Work
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 }
 
 .work-item {
@@ -359,7 +368,7 @@ Work process
  */
 
 .work-process {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -496,6 +505,7 @@ Services
 }
 
 .service-item-iw p {
+    max-width: 230px;
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
     color: #787878FF;
